@@ -6,27 +6,31 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI English Poems</title>
+    <title>AI Italian Poems</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI English Poems</h1>
+        <h1>AI Italian Poems</h1>
       </header>
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the English poems"
-            autofocus
-            required
-            autocomplete="off"
-            class="instrunctions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of an Italian poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instrunctions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Flower, Rome or Moon</div>
+        </div>
+
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
